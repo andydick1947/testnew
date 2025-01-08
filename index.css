@@ -12,7 +12,7 @@ grid-template-areas:
 .header{
   background-color: skyblue;
   grid-area: header;
-  color: blue;
+  color: black;
   text-align: center;
   font-size: 30px;
   font-weight: bold;
@@ -74,8 +74,10 @@ grid-template-areas:
 #cards{
 
   margin: auto;
-  width: 80%;
-  padding: 20px;
+  width: 100px;
+  padding: 40px;
+  padding-top:10%;
+  padding-bottom:5%;
 }
 
 #mycttee{
