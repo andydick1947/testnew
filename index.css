@@ -21,7 +21,6 @@ grid-template-areas:
 .sidebar{
   background-color: black;
   grid-area: side; 
-  height: 99%;
 
 }
 
