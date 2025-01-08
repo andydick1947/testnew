@@ -1,6 +1,6 @@
 body{
 background-color: skyblue; 
-height: 97vh;
+height: 96vh;
 display: grid;
 grid-template-columns: 120px 1fr;
 grid-template-rows: 50px 1fr;
@@ -21,6 +21,7 @@ grid-template-areas:
 .sidebar{
   background-color: black;
   grid-area: side; 
+  height: 99%;
 
 }
 
