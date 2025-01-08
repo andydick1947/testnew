@@ -12,7 +12,7 @@ grid-template-areas:
 .header{
   background-color: skyblue;
   grid-area: header;
-  color: blue;
+  color: black;
   text-align: center;
   font-size: 30px;
   font-weight: bold;
