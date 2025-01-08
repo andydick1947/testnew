@@ -80,9 +80,12 @@ grid-template-areas:
   padding-bottom:5%;
 }
 
-#mycttee{
-  text-align: center;
+#tbl{
+margin-left: auto;
+margin-right: auto;
+font-size: 30px;
+color: blue;
 
 }
 
-@media only screen and (min-width: 100px) and (max-width: 760px){}
+@media only screen and (min-width: 300px) and (max-width: 760px){}
