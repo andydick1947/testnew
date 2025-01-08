@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bridge</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="res-bar.css">
+ 
+</head>
+
+<body>
+<h2>RESULTS FOR 2025</h2>
+    <div id="div-container">
+ 
+
+  </div>
+
+
+<script src="res-bar.js"></script>
+<script>
+
+if (stdt==4){
+  for (let ii=3; ii<=11;ii++){
+    const msel=`<button id="buton${ii}" class="butn" onclick="document.location='res${mnth[ii]}.html'">${mnth[ii]}</button>`;
+const div=document.createElement("div");
+const DivContainer=document.getElementById("div-container");
+DivContainer.appendChild(div);
+div.innerHTML=msel;
+}
+
+for (let ii=0; ii<=2;ii++){
+  const msel=`<button id="buton${ii}" class="butn" onclick="document.location='res${mnth[ii]}.html'">${mnth[ii]}</button>`;
+const div=document.createElement("div");
+const DivContainer=document.getElementById("div-container");
+DivContainer.appendChild(div);
+div.innerHTML=msel;
+}
+
+}else if (stdt==1){
+
+for (let ii=0; ii<=11;ii++){
+  const msel=`<button id="buton${ii}" class="butn" onclick="document.location='res${mnth[ii]}.html'">${mnth[ii]}</button>`;
+  const div=document.createElement("div");
+const DivContainer=document.getElementById("div-container");
+DivContainer.appendChild(div);
+div.innerHTML=msel;
+}
+}
+
+</script>
+</body>
+</html>
+

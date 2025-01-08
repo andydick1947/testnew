@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bowls Club Bridge</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="res-byMnth.css">
+ 
+</head>
+<body>
+
+  <div id="div-container1">
+
+
+  </div>
+  <div class="target6"></div>
+
+    <script src="res-bar.js"></script>
+    <script>
+if(stdt==4){
+btsv=runtot[2];
+btev=runtot[3];
+} else if (stdt==1){
+  btsv=runtot[5];
+  btev=runtot[6]; 
+}
+for (let ii=btsv; ii<=btev-1;ii++){
+const dsel=`<button type="button" id="butn${ii}" class="butn">${myResults[ii-1][0]}</button>`;
+const div=document.createElement("div");
+const DivContainer1=document.getElementById("div-container1");
+DivContainer1.appendChild(div);
+div.innerHTML=dsel;
+  }
+
+  for (let x=btsv; x<=btev-1; x++){ 
+    ii=x-1;
+if (myResults[ii][2]=="1"){
+bt=`butn${x}`;
+
+document.getElementById(bt).style.backgroundColor="skyblue";
+document.getElementById(bt).style.borderColor="blue";
+}
+     let z="butn".concat(x);
+     let y=document.getElementById(z);
+     
+     y.addEventListener("click",function(e){  
+     
+     fileCalc(y.innerText);
+     
+     ldfle();
+     })
+     };
+       
+     function fileCalc(lbl){
+      for (let i=btsv-1; i<=btev-2; i++){ 
+     
+     if (lbl==myResults[i][0]){
+     myRes=myResults[i];}
+     sk=myRes[0,1]; 
+     }
+     
+     if(myRes[0,2]=="1"){
+       sk="Ranks.html";
+     }
+     
+     return sk; 
+     }
+       function ldfle(){
+       const target6El=document.querySelector(".target6");
+      
+       fetch(sk)
+       
+           .then(res => {
+               if (res.ok) {
+               return res.text();
+               }
+       })
+       .then(selectFile =>{
+       target6El.innerHTML=selectFile;
+       });
+       }
+       
+       
+       </script>
+
+</body>
+</html>
+

@@ -1,0 +1,116 @@
+body{
+background-color: skyblue; 
+height: 97vh;
+display: grid;
+grid-template-columns: 120px 1fr;
+grid-template-rows: 50px 1fr;
+grid-template-areas:
+"header header"
+"side main";
+}
+
+.header{
+  background-color: skyblue;
+  grid-area: header;
+  color: blue;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.sidebar{
+  background-color: black;
+  grid-area: side; 
+
+}
+
+.sidebtn{
+  display: block;
+  background-color: black;
+  height: 60px;
+  width: 100%;
+  border: solid 1px white;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding-top: 10px;
+  margin: auto;
+}
+.sidebtn:hover{
+  background-color: skyblue;
+  color:black;
+}
+.main{
+  background-color: skyblue;
+  grid-area: main; 
+  border: solid 1px black;
+}
+#frm1{
+  height: 90vh;
+  width: 100%;
+}
+.mytxt{
+  color: blue;
+  font-size: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#img2{
+  height: 36%;
+  width: 54%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#img3{
+  height: 30%;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#cards{
+  height: 150px;
+  width: 150px;
+  padding-top:30px;
+}
+
+#mycttee{
+  text-align: center;
+
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1400px){
+     #img2{
+      height: 48%;
+      width: 60%;
+
+     } 
+
+}
+
+
+@media only screen and (min-width: 760px) and (max-width: 1100px){
+  #img2{
+    height: 55%;
+    width: 65%;
+
+   } 
+   #img3{
+    height: 45%;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+}
+@media only screen and (min-width: 100px) and (max-width: 760px){
+
+.sidebar{
+ display: none;
+}
+
+}
