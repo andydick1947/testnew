@@ -85,7 +85,42 @@ margin-left: auto;
 margin-right: auto;
 font-size: 30px;
 color: blue;
-
 }
 
-@media only screen and (min-width: 300px) and (max-width: 760px){}
+@media only screen and (min-width: 800px) and (max-width: 1000px){
+  #img2{
+    height: 42%;
+    width: 63%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #img3{
+    height: 42%;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 580px) and (max-width: 860px){
+  #img2{
+    height: 56%;
+    width: 90%;
+
+  }
+  #img3{
+    height: 56%;
+    width: 90%;
+
+  }
+
+  #tbl{
+    font-size: 20px;
+    }
+    body{
+
+      grid-template-columns: 120px 1fr;
+
+      }
+}
