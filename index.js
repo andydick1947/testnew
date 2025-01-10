@@ -47,7 +47,20 @@ for (let x=1; x<=7; x++){
          cleanse.removeChild(cleanse.firstChild);
 
    }
+
 }
+function tgle(){
+   const hamMenu = document.querySelector(".ham-menu");
+   const offScreenMenu = document.querySelector(".off-screen-menu");
+
+     hamMenu.classList.toggle("active");
+     offScreenMenu.classList.toggle("active");
+   };
+
+
+
+
+
 
 function myintro(){
       const int='<p id="myintro" class="mytxt">    The Bridge Club was founded around 1996 as the Monday Night Bridge Club, the first Director being Derek Branch. The Club continues to meet in the Llantonian Hall.  The aim of the club is to provide a regular facility for Duplicate Bridge allowing all pairs to play the same boards over the course of the evening. Ideally people attend in pairs although every attempt is made to cater for those without a regular partner.</p>';
@@ -116,3 +129,61 @@ function myarch(){
       mydiv.appendChild(div);
       div.innerHTML=arc;
 }
+
+const hamMenu = document.querySelector(".ham-menu");
+const offScreenMenu = document.querySelector(".off-screen-menu");
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  offScreenMenu.classList.toggle("active");
+});
+
+for (let x=1; x<=7; x++){ 
+  
+   let z=`debtn${x}`;
+   let y=document.getElementById(z);
+   y.addEventListener("click",function(e){  
+ 
+    if(z=="debtn1"){ 
+       clean();
+       myintro();
+       tgle()
+    }
+ 
+    if(z=="debtn2"){ 
+       clean()
+       myloc()
+       tgle()
+   
+    }
+ 
+    if(z=="debtn3"){ 
+       clean()
+       mycttee()
+       tgle()
+    }
+ 
+    if(z=="debtn4"){ 
+       clean()
+       mymeets()
+       tgle()
+    }
+ 
+    if(z=="debtn5"){ 
+       clean()
+       myfees()
+       tgle()
+    }
+ 
+    if(z=="debtn6"){ 
+       clean()
+       myres()
+       tgle()
+    }
+ 
+    if(z=="debtn7"){ 
+       clean()
+       myarch()
+       tgle()
+    }
+   })
+   };
