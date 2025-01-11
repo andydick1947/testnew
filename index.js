@@ -45,9 +45,7 @@ for (let x=1; x<=7; x++){
       const cleanse = document.getElementById("mainsect");
       while (cleanse.hasChildNodes()) {
          cleanse.removeChild(cleanse.firstChild);
-
    }
-
 }
 function tgle(){
    const hamMenu = document.querySelector(".ham-menu");
@@ -57,21 +55,15 @@ function tgle(){
      offScreenMenu.classList.toggle("active");
    };
 
-
-
-
-
-
 function myintro(){
-      const int='<p id="myintro" class="mytxt">    The Bridge Club was founded around 1996 as the Monday Night Bridge Club, the first Director being Derek Branch. The Club continues to meet in the Llantonian Hall.  The aim of the club is to provide a regular facility for Duplicate Bridge allowing all pairs to play the same boards over the course of the evening. Ideally people attend in pairs although every attempt is made to cater for those without a regular partner.</p>';
+      const int='<p id="myintro" class="mytxt">INTRODUCTION<br><br>The Bridge Club was founded around 1996 as the Monday Night Bridge Club, the first Director being Derek Branch. The Club continues to meet in the Llantonian Hall.  The aim of the club is to provide a regular facility for Duplicate Bridge allowing all pairs to play the same boards over the course of the evening. Ideally people attend in pairs although every attempt is made to cater for those without a regular partner.</p>';
       const div=document.createElement("div");
       const mydiv=document.getElementById("mainsect");
       mydiv.appendChild(div);
       div.innerHTML=int;
 }
-
 function myloc(){
-   const loc='<p id="myloc" class="mytxt">The Llantonian Hall is situated at the far end of the Car Park it shares with the Rugby Club. Access is directly off the roundabout passed the surgery.</p>';
+   const loc='<p id="myloc" class="mytxt">LOCATION<br><br>The Llantonian Hall is situated at the far end of the Car Park it shares with the Rugby Club. Access is directly off the roundabout passed the surgery.</p>';
    const div=document.createElement("div");
    const mydiv=document.getElementById("mainsect");
    mydiv.appendChild(div);
@@ -99,7 +91,7 @@ function mycttee(){
 }
 
 function mymeets(){
-   const mts='<p id="meets" class="mytxt">The club meets on Monday evenings at 6.45, with play starting at 7.00 and aiming to finish by 10.00. There are also two party evenings each year</p>';
+   const mts='<p id="meets" class="mytxt">MEETINGS<br><br>The club meets on Monday evenings at 6.45, with play starting at 7.00 and aiming to finish by 10.00. There are also two party evenings each year</p>';
       const div=document.createElement("div");
       const mydiv=document.getElementById("mainsect");
       mydiv.appendChild(div);
@@ -107,7 +99,7 @@ function mymeets(){
 }
 
 function myfees(){
-   const fees='<p id="mycttee" class="mytxt">The Fees are paid annually in January. They have been held steady at £65 for the year 2025. There is no Table charge for members, however, visitors pay £4 for each session.</p>';
+   const fees='<p id="mycttee" class="mytxt">FEES<br><br>The Fees are paid annually in January. They have been held steady at £65 for the year 2025. There is no Table charge for members, however, visitors pay £4 for each session.</p>';
       const div=document.createElement("div");
       const mydiv=document.getElementById("mainsect");
       mydiv.appendChild(div);
@@ -186,4 +178,4 @@ for (let x=1; x<=7; x++){
        tgle()
     }
    })
-   };
+   }
