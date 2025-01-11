@@ -140,7 +140,7 @@ color: blue;
 
       }
 }
-@media only screen and (min-width: 300px) and (max-width: 600px){
+@media only screen and (min-width: 100px) and (max-width: 600px){
   .header {
     display: none;
   }
@@ -158,14 +158,12 @@ color: blue;
     "main"
     
     }
-  /*.main{
-      display: none;
-    }*/
+
     
 /* base styles */
 * {
   margin: 0;
-  padding: 0;
+  padding: 1%;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
@@ -184,6 +182,7 @@ a:hover {
 body {
   background-color: skyblue;
   font-family: sans-serif;
+
 }
 
 /* off-screen-menu */
@@ -293,5 +292,11 @@ nav {
       display: block;
       margin-left: auto;
       margin-right: auto;
+    }
+    .mytxt{
+      color: blue;
+      font-size: 22px;
+      padding-left: 1%;
+      padding-right: 1%;
     }
 }
