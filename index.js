@@ -62,6 +62,7 @@ function myintro(){
       mydiv.appendChild(div);
       div.innerHTML=int;
 }
+
 function myloc(){
    const loc='<p id="myloc" class="mytxt">LOCATION<br><br>The Llantonian Hall is situated at the far end of the Car Park it shares with the Rugby Club. Access is directly off the roundabout passed the surgery.</p>';
    const div=document.createElement("div");
