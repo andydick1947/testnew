@@ -77,7 +77,7 @@ function myloc(){
 }
 
 function mycttee(){
-      const cte='<table id="tbl"><tr><th colspan="2">THE COMMITTEE</th></tr><tr><td>Chairman/Director:</td><td>Allan Evans</td></tr><tr><td>Treasurer:</td><td>Andrew Leonard</td><tr><td>Seceratary/Partnership Co-ordinator:</td><td>Meryl Phillips</td></tr><tr><td>Scorer:</td><td>Andy Dick</td></tr></table><br>';
+      const cte='<table id="tbl"><tr><th colspan="2">THE COMMITTEE</th></tr><tr><td>Chairman/Director:</td><td>Allan Evans</td></tr><tr><td>Treasurer:</td><td>Andrew Leonard</td><tr><td>Seceratary/Partnership Coordinator:</td><td>Meryl Phillips</td></tr><tr><td>Scorer:</td><td>Andy Dick</td></tr></table><br>';
       const div=document.createElement("div");
       const mydiv=document.getElementById("mainsect");
       mydiv.appendChild(div);
