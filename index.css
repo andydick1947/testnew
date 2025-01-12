@@ -99,7 +99,9 @@ margin-right: auto;
 font-size: 30px;
 color: blue;
 }
-
+#icon1{
+  margin-left: 45px;
+}
 @media only screen and (min-width: 800px) and (max-width: 1000px){
   #img2{
     height: 42%;
@@ -324,4 +326,8 @@ nav {
   body{
     display: none;
   }
+#icon1{
+  margin-left: 1000px;
 }
+}
+
